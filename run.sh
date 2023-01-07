@@ -12,6 +12,8 @@ then
     echo "all dockers runs"
     docker exec cassandra1 cqlsh -e "CREATE KEYSPACE IF NOT EXISTS $2 WITH REPLICATION = { 'class' : '$3', 'replication_factor' : '$4' }; exit"
 
+    ip="localhost"
+
 else
     apt update
     ip=${hostname -I}
@@ -19,4 +21,7 @@ else
     echo $query | /bin/cqlsh $ip
 fi    
 
-docker ps
+
+
+#arg ip num_threads
+python ./final_project/client.py $ip 100

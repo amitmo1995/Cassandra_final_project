@@ -1,4 +1,3 @@
-CREATE KEYSPACE IF NOT EXISTS iejel WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '3' };
 CREATE TABLE iejel.guqfz (ipsx text, nsrb text, pkeq text, izzs text, ooet text, PRIMARY KEY (nsrb, ipsx));INSERT INTO iejel.guqfz (ipsx, nsrb, ooet) VALUES('ufn', 'jav', 'tmy');
 INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('yhn', 'pqf');
 SELECT * FROM iejel.guqfz;
