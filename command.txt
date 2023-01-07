@@ -1,0 +1,43 @@
+Docker volume create casvol
+
+-v "$(pwd)/casvol:/var/lib/cassandra"
+
+docker run --name cassandra1 -d -v "$(pwd)/data:/var/lib/cassandra" -p 9042:9042 --network cassandra -d cassandra   
+
+docker run --name cassandra2 -d --network cassandra -e CASSANDRA_SEEDS=cassandra1 cassandra
+
+docker run --name cassandra3 -d --network cassandra -e CASSANDRA_SEEDS="cassandra1 , cassandra2"   cassandra
+
+docker run -it --network cassandra --rm cassandra cqlsh cassandra1 
+
+docker run --rm --network cassandra -v "$(pwd)/data.cql:/scripts/data.cql" -e CQLSH_HOST=cassandra1 -e CQLSH_PORT=9042 -e CQLVERSION=3.4.5 nuvo/docker-cqlsh
+
+docker run --rm -it --network cassandra  -v "$(pwd)/casvol:/vol" nuvo/docker-cqlsh cqlsh cassandra1 9042 --cqlversion='3.4.5'
+
+
+CREATE KEYSPACE IF NOT EXISTS Barak WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '1' };
+
+
+CREATE TABLE IF NOT EXISTS barak.Barak (userid text PRIMARY KEY, name text, age int, last_update_timestamp timestamp);
+
+
+INSERT INTO barak.Barak (userid, name, age, last_update_timestamp) VALUES ('9876', 'Amit', 2, toTimeStamp(now()));
+
+
+INSERT INTO barakey.Barak (userid , name , age , last_update_timestamp) VALUES ('135454646234' , 'Barak' , 5 , toTimeStamp(now()));
+
+
+
+SELECT * FROM system_schema.keyspaces;
+SELECT * FROM barakey.Barak;
+DROP KEYSPACE barakey;
+
+
+
+
+
+nodetool status
+nodetool gossipinfo
+
+
+
