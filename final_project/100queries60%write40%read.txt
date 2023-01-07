@@ -1,100 +1,101 @@
-CREATE TABLE iejel.guqfz (ipsx text, nsrb text, pkeq text, izzs text, ooet text, PRIMARY KEY (nsrb, ipsx));INSERT INTO iejel.guqfz (ipsx, nsrb, ooet) VALUES('ufn', 'jav', 'tmy');
-INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('yhn', 'pqf');
-SELECT * FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, nsrb) VALUES('ciz', 'lpt');
-INSERT INTO iejel.guqfz (pkeq, ooet) VALUES('nlv', 'wkn');
-INSERT INTO iejel.guqfz (izzs) VALUES('esx');
-INSERT INTO iejel.guqfz (pkeq, ipsx, nsrb, izzs, ooet) VALUES('wnl', 'grt', 'dkl', 'qtx', 'mcv');
-SELECT ipsx FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (pkeq) VALUES('znd');
-INSERT INTO iejel.guqfz (ooet, nsrb, izzs, pkeq) VALUES('yzc', 'gse', 'cpq', 'wgl');
-INSERT INTO iejel.guqfz (pkeq, nsrb, izzs, ooet) VALUES('bwp', 'mhr', 'rpy', 'lbz');
-SELECT ooet, nsrb, izzs FROM iejel.guqfz;
-SELECT * FROM iejel.guqfz;
-SELECT nsrb, izzs, pkeq, ooet FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (pkeq) VALUES('zup');
-SELECT ooet FROM iejel.guqfz;
-SELECT izzs, ipsx, pkeq FROM iejel.guqfz;
-SELECT ipsx, ooet FROM iejel.guqfz;
-SELECT ooet, ipsx, nsrb FROM iejel.guqfz;
-SELECT ipsx, izzs, pkeq, nsrb FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, pkeq, izzs, nsrb, ipsx) VALUES('uko', 'rhz', 'zgm', 'zmq', 'mpw');
-INSERT INTO iejel.guqfz (pkeq, izzs) VALUES('mps', 'fko');
-INSERT INTO iejel.guqfz (nsrb) VALUES('wla');
-INSERT INTO iejel.guqfz (nsrb, ooet, pkeq, izzs, ipsx) VALUES('qpf', 'tdp', 'eeb', 'kwg', 'pqd');
-SELECT pkeq, nsrb FROM iejel.guqfz;
-SELECT izzs FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, ipsx, pkeq, izzs) VALUES('mxs', 'bzb', 'axy', 'qhe');
-INSERT INTO iejel.guqfz (nsrb) VALUES('con');
-INSERT INTO iejel.guqfz (ooet, nsrb) VALUES('vir', 'mwk');
-SELECT izzs FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (pkeq) VALUES('uxj');
-INSERT INTO iejel.guqfz (ooet, pkeq, izzs) VALUES('rpv', 'sgv', 'xlo');
-SELECT pkeq, ipsx FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (nsrb, pkeq, ipsx, ooet) VALUES('nce', 'mpd', 'tmi', 'ljo');
-INSERT INTO iejel.guqfz (ooet) VALUES('jmw');
-INSERT INTO iejel.guqfz (izzs, pkeq) VALUES('pbk', 'fmt');
-INSERT INTO iejel.guqfz (ooet, izzs) VALUES('qyh', 'ivw');
-INSERT INTO iejel.guqfz (nsrb, ipsx, izzs) VALUES('ifw', 'tac', 'tot');
-SELECT pkeq, ooet FROM iejel.guqfz;
-SELECT nsrb, pkeq FROM iejel.guqfz;
-SELECT ipsx, izzs, ooet, nsrb FROM iejel.guqfz;
-SELECT ooet, izzs FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (izzs, ooet) VALUES('gfc', 'way');
-INSERT INTO iejel.guqfz (izzs, ooet, nsrb, pkeq) VALUES('dqj', 'jqf', 'hmz', 'ybc');
-SELECT izzs, pkeq, nsrb, ooet FROM iejel.guqfz;
-SELECT izzs, nsrb FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, nsrb, izzs) VALUES('xrx', 'zmq', 'aay');
-INSERT INTO iejel.guqfz (pkeq) VALUES('ple');
-INSERT INTO iejel.guqfz (nsrb, ooet, ipsx, izzs) VALUES('wky', 'wuy', 'cfu', 'gjj');
-SELECT pkeq, nsrb FROM iejel.guqfz;
-SELECT nsrb FROM iejel.guqfz;
-SELECT pkeq, nsrb FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('nwb', 'cza');
-INSERT INTO iejel.guqfz (pkeq, izzs, nsrb, ipsx, ooet) VALUES('jva', 'ejl', 'lpg', 'vqo', 'tvy');
-INSERT INTO iejel.guqfz (ooet, pkeq, nsrb, izzs, ipsx) VALUES('paw', 'uzt', 'qff', 'oek', 'qur');
-SELECT izzs, nsrb, ipsx, ooet FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (nsrb, ooet, izzs, ipsx, pkeq) VALUES('ior', 'twv', 'haw', 'zrs', 'mnw');
-INSERT INTO iejel.guqfz (ipsx, izzs, pkeq, nsrb) VALUES('gmg', 'wfg', 'dyh', 'inq');
-SELECT izzs, ipsx, nsrb FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, pkeq, ipsx) VALUES('dtr', 'pxi', 'pos');
-SELECT pkeq FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (izzs, nsrb) VALUES('doi', 'yrh');
-INSERT INTO iejel.guqfz (pkeq, nsrb, ipsx, izzs, ooet) VALUES('zgh', 'joq', 'drc', 'ojo', 'nnh');
-INSERT INTO iejel.guqfz (nsrb, pkeq, izzs, ipsx, ooet) VALUES('byj', 'bbn', 'ulb', 'ycg', 'irk');
-INSERT INTO iejel.guqfz (izzs, nsrb, ipsx, pkeq, ooet) VALUES('cla', 'ppo', 'llo', 'kxb', 'mfr');
-INSERT INTO iejel.guqfz (ipsx) VALUES('xfg');
-INSERT INTO iejel.guqfz (pkeq) VALUES('dbc');
-INSERT INTO iejel.guqfz (izzs, ipsx, pkeq, nsrb) VALUES('yav', 'lrh', 'byp', 'ehg');
-INSERT INTO iejel.guqfz (pkeq, ipsx) VALUES('ybt', 'lqv');
-SELECT * FROM iejel.guqfz;
-SELECT * FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (nsrb) VALUES('ufc');
-INSERT INTO iejel.guqfz (ipsx, izzs) VALUES('vdu', 'skp');
-INSERT INTO iejel.guqfz (nsrb, ipsx, ooet, pkeq, izzs) VALUES('mid', 'ucw', 'smh', 'rde', 'lqx');
-SELECT izzs, nsrb, ooet FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, pkeq, ipsx) VALUES('mvb', 'tio', 'pvx');
-INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('nae', 'gpd');
-INSERT INTO iejel.guqfz (ipsx) VALUES('nzp');
-INSERT INTO iejel.guqfz (izzs, pkeq, nsrb, ipsx) VALUES('rsn', 'tka', 'ybt', 'jrb');
-INSERT INTO iejel.guqfz (ipsx, pkeq, nsrb) VALUES('opv', 'axr', 'cgl');
-SELECT ipsx, ooet FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, izzs, nsrb, ipsx, pkeq) VALUES('ecq', 'nwr', 'tjw', 'ark', 'kns');
-INSERT INTO iejel.guqfz (ipsx, pkeq, izzs) VALUES('krq', 'pnj', 'zfk');
-INSERT INTO iejel.guqfz (ooet, nsrb, izzs) VALUES('xse', 'ijj', 'tls');
-INSERT INTO iejel.guqfz (ooet, ipsx, izzs, pkeq) VALUES('zrk', 'kvh', 'kky', 'xzj');
-INSERT INTO iejel.guqfz (ipsx) VALUES('kds');
-SELECT izzs, nsrb, ooet, ipsx FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ooet, pkeq, ipsx, izzs) VALUES('uix', 'jil', 'qlu', 'xnd');
-SELECT ipsx, nsrb, pkeq FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (ipsx) VALUES('yyy');
-SELECT * FROM iejel.guqfz;
-INSERT INTO iejel.guqfz (pkeq, ooet) VALUES('sfm', 'xhr');
-INSERT INTO iejel.guqfz (ipsx, pkeq) VALUES('chj', 'fxq');
-SELECT nsrb, pkeq, ooet FROM iejel.guqfz;
-SELECT ipsx FROM iejel.guqfz;
-SELECT * FROM iejel.guqfz;
-SELECT pkeq FROM iejel.guqfz;
-SELECT * FROM iejel.guqfz;
-SELECT izzs, ipsx FROM iejel.guqfz;
-SELECT * FROM iejel.guqfz;
+CREATE TABLE IF NOT EXISTS iejel.guqfz (ipsx text, nsrb text, pkeq text, izzs text, ooet text, PRIMARY KEY (nsrb, ipsx))
+INSERT INTO iejel.guqfz (ipsx, nsrb, ooet) VALUES('ufn', 'jav', 'tmy')
+INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('yhn', 'pqf')
+SELECT * FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, nsrb) VALUES('ciz', 'lpt')
+INSERT INTO iejel.guqfz (pkeq, ooet) VALUES('nlv', 'wkn')
+INSERT INTO iejel.guqfz (izzs) VALUES('esx')
+INSERT INTO iejel.guqfz (pkeq, ipsx, nsrb, izzs, ooet) VALUES('wnl', 'grt', 'dkl', 'qtx', 'mcv')
+SELECT ipsx FROM iejel.guqfz
+INSERT INTO iejel.guqfz (pkeq) VALUES('znd')
+INSERT INTO iejel.guqfz (ooet, nsrb, izzs, pkeq) VALUES('yzc', 'gse', 'cpq', 'wgl')
+INSERT INTO iejel.guqfz (pkeq, nsrb, izzs, ooet) VALUES('bwp', 'mhr', 'rpy', 'lbz')
+SELECT ooet, nsrb, izzs FROM iejel.guqfz
+SELECT * FROM iejel.guqfz
+SELECT nsrb, izzs, pkeq, ooet FROM iejel.guqfz
+INSERT INTO iejel.guqfz (pkeq) VALUES('zup')
+SELECT ooet FROM iejel.guqfz
+SELECT izzs, ipsx, pkeq FROM iejel.guqfz
+SELECT ipsx, ooet FROM iejel.guqfz
+SELECT ooet, ipsx, nsrb FROM iejel.guqfz
+SELECT ipsx, izzs, pkeq, nsrb FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, pkeq, izzs, nsrb, ipsx) VALUES('uko', 'rhz', 'zgm', 'zmq', 'mpw')
+INSERT INTO iejel.guqfz (pkeq, izzs) VALUES('mps', 'fko')
+INSERT INTO iejel.guqfz (nsrb) VALUES('wla')
+INSERT INTO iejel.guqfz (nsrb, ooet, pkeq, izzs, ipsx) VALUES('qpf', 'tdp', 'eeb', 'kwg', 'pqd')
+SELECT pkeq, nsrb FROM iejel.guqfz
+SELECT izzs FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, ipsx, pkeq, izzs) VALUES('mxs', 'bzb', 'axy', 'qhe')
+INSERT INTO iejel.guqfz (nsrb) VALUES('con')
+INSERT INTO iejel.guqfz (ooet, nsrb) VALUES('vir', 'mwk')
+SELECT izzs FROM iejel.guqfz
+INSERT INTO iejel.guqfz (pkeq) VALUES('uxj')
+INSERT INTO iejel.guqfz (ooet, pkeq, izzs) VALUES('rpv', 'sgv', 'xlo')
+SELECT pkeq, ipsx FROM iejel.guqfz
+INSERT INTO iejel.guqfz (nsrb, pkeq, ipsx, ooet) VALUES('nce', 'mpd', 'tmi', 'ljo')
+INSERT INTO iejel.guqfz (ooet) VALUES('jmw')
+INSERT INTO iejel.guqfz (izzs, pkeq) VALUES('pbk', 'fmt')
+INSERT INTO iejel.guqfz (ooet, izzs) VALUES('qyh', 'ivw')
+INSERT INTO iejel.guqfz (nsrb, ipsx, izzs) VALUES('ifw', 'tac', 'tot')
+SELECT pkeq, ooet FROM iejel.guqfz
+SELECT nsrb, pkeq FROM iejel.guqfz
+SELECT ipsx, izzs, ooet, nsrb FROM iejel.guqfz
+SELECT ooet, izzs FROM iejel.guqfz
+INSERT INTO iejel.guqfz (izzs, ooet) VALUES('gfc', 'way')
+INSERT INTO iejel.guqfz (izzs, ooet, nsrb, pkeq) VALUES('dqj', 'jqf', 'hmz', 'ybc')
+SELECT izzs, pkeq, nsrb, ooet FROM iejel.guqfz
+SELECT izzs, nsrb FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, nsrb, izzs) VALUES('xrx', 'zmq', 'aay')
+INSERT INTO iejel.guqfz (pkeq) VALUES('ple')
+INSERT INTO iejel.guqfz (nsrb, ooet, ipsx, izzs) VALUES('wky', 'wuy', 'cfu', 'gjj')
+SELECT pkeq, nsrb FROM iejel.guqfz
+SELECT nsrb FROM iejel.guqfz
+SELECT pkeq, nsrb FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('nwb', 'cza')
+INSERT INTO iejel.guqfz (pkeq, izzs, nsrb, ipsx, ooet) VALUES('jva', 'ejl', 'lpg', 'vqo', 'tvy')
+INSERT INTO iejel.guqfz (ooet, pkeq, nsrb, izzs, ipsx) VALUES('paw', 'uzt', 'qff', 'oek', 'qur')
+SELECT izzs, nsrb, ipsx, ooet FROM iejel.guqfz
+INSERT INTO iejel.guqfz (nsrb, ooet, izzs, ipsx, pkeq) VALUES('ior', 'twv', 'haw', 'zrs', 'mnw')
+INSERT INTO iejel.guqfz (ipsx, izzs, pkeq, nsrb) VALUES('gmg', 'wfg', 'dyh', 'inq')
+SELECT izzs, ipsx, nsrb FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, pkeq, ipsx) VALUES('dtr', 'pxi', 'pos')
+SELECT pkeq FROM iejel.guqfz
+INSERT INTO iejel.guqfz (izzs, nsrb) VALUES('doi', 'yrh')
+INSERT INTO iejel.guqfz (pkeq, nsrb, ipsx, izzs, ooet) VALUES('zgh', 'joq', 'drc', 'ojo', 'nnh')
+INSERT INTO iejel.guqfz (nsrb, pkeq, izzs, ipsx, ooet) VALUES('byj', 'bbn', 'ulb', 'ycg', 'irk')
+INSERT INTO iejel.guqfz (izzs, nsrb, ipsx, pkeq, ooet) VALUES('cla', 'ppo', 'llo', 'kxb', 'mfr')
+INSERT INTO iejel.guqfz (ipsx) VALUES('xfg')
+INSERT INTO iejel.guqfz (pkeq) VALUES('dbc')
+INSERT INTO iejel.guqfz (izzs, ipsx, pkeq, nsrb) VALUES('yav', 'lrh', 'byp', 'ehg')
+INSERT INTO iejel.guqfz (pkeq, ipsx) VALUES('ybt', 'lqv')
+SELECT * FROM iejel.guqfz
+SELECT * FROM iejel.guqfz
+INSERT INTO iejel.guqfz (nsrb) VALUES('ufc')
+INSERT INTO iejel.guqfz (ipsx, izzs) VALUES('vdu', 'skp')
+INSERT INTO iejel.guqfz (nsrb, ipsx, ooet, pkeq, izzs) VALUES('mid', 'ucw', 'smh', 'rde', 'lqx')
+SELECT izzs, nsrb, ooet FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, pkeq, ipsx) VALUES('mvb', 'tio', 'pvx')
+INSERT INTO iejel.guqfz (ipsx, nsrb) VALUES('nae', 'gpd')
+INSERT INTO iejel.guqfz (ipsx) VALUES('nzp')
+INSERT INTO iejel.guqfz (izzs, pkeq, nsrb, ipsx) VALUES('rsn', 'tka', 'ybt', 'jrb')
+INSERT INTO iejel.guqfz (ipsx, pkeq, nsrb) VALUES('opv', 'axr', 'cgl')
+SELECT ipsx, ooet FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, izzs, nsrb, ipsx, pkeq) VALUES('ecq', 'nwr', 'tjw', 'ark', 'kns')
+INSERT INTO iejel.guqfz (ipsx, pkeq, izzs) VALUES('krq', 'pnj', 'zfk')
+INSERT INTO iejel.guqfz (ooet, nsrb, izzs) VALUES('xse', 'ijj', 'tls')
+INSERT INTO iejel.guqfz (ooet, ipsx, izzs, pkeq) VALUES('zrk', 'kvh', 'kky', 'xzj')
+INSERT INTO iejel.guqfz (ipsx) VALUES('kds')
+SELECT izzs, nsrb, ooet, ipsx FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ooet, pkeq, ipsx, izzs) VALUES('uix', 'jil', 'qlu', 'xnd')
+SELECT ipsx, nsrb, pkeq FROM iejel.guqfz
+INSERT INTO iejel.guqfz (ipsx) VALUES('yyy')
+SELECT * FROM iejel.guqfz
+INSERT INTO iejel.guqfz (pkeq, ooet) VALUES('sfm', 'xhr')
+INSERT INTO iejel.guqfz (ipsx, pkeq) VALUES('chj', 'fxq')
+SELECT nsrb, pkeq, ooet FROM iejel.guqfz
+SELECT ipsx FROM iejel.guqfz
+SELECT * FROM iejel.guqfz
+SELECT pkeq FROM iejel.guqfz
+SELECT * FROM iejel.guqfz
+SELECT izzs, ipsx FROM iejel.guqfz
+SELECT * FROM iejel.guqfz
