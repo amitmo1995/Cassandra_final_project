@@ -1,0 +1,19 @@
+ssh amitmo@62.90.89.27 
+password:
+
+
+/bin/cqlsh serverIp
+
+sudo systemctl start cassandra 
+
+sudo systemctl restart cassandra 
+
+sudo systemctl stop cassandra 
+
+sudo systemctl enable cassandra
+
+sudo vi /etc/cassandra/cassandra.yaml 
+
+sudo cp /etc/cassandra/cassandra.yaml /etc/cassandra/cassandra.yaml.backup 
+
+
