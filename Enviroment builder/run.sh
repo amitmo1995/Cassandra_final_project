@@ -3,17 +3,8 @@
 
 if [ $1 == 'docker' ]
 then
-    docker run --name cassandra1 -d -v "$(pwd)/data:/var/lib/cassandra" -p 9042:9042 --network cassandra -d cassandra
-    sleep 2
-    docker run --name cassandra2 -d --network cassandra -e CASSANDRA_SEEDS=cassandra1 cassandra
-    sleep 2
-    docker run --name cassandra3 -d --network cassandra -e CASSANDRA_SEEDS="cassandra1 , cassandra2"   cassandra
-    sleep 2
-    echo "all dockers runs"
-    docker exec cassandra1 cqlsh -e "CREATE KEYSPACE IF NOT EXISTS $2 WITH REPLICATION = { 'class' : '$3', 'replication_factor' : '$4' }; exit"
-
+    docker compose up -d
     ip="localhost"
-
 else
     apt update
     ip=${hostname -I}
@@ -21,7 +12,19 @@ else
     echo $query | /bin/cqlsh $ip
 fi    
 
+virtualenv -p python3 .venv
+. .venv/*/activate
 
+pip install -r requirements.txt
+pip install cassandra-driver --no-binary :all:
 
 #arg ip num_threads
-python ./final_project/client.py $ip 100
+python client.py $ip 1
+
+if [ $1 == 'docker' ]
+then
+    docker compose down
+fi    
+
+docker volume rm $(docker volume ls -q)
+deactivate

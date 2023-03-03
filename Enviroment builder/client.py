@@ -1,37 +1,64 @@
 from cassandra.cluster import Cluster
-import sys
+from  concurrent.futures import ThreadPoolExecutor,  wait
+from datetime import date, datetime, timedelta
 from decimal import *
-import threading
-import time
-import os
-import concurrent.futures
-import threading
-import queue
+import sys
+import json
 
 
-#-----------------------Init Cassandra Connection------------------
-cluster = Cluster([sys.argv[1]])
-session = cluster.connect('barak')
-session.execute( "CREATE TABLE IF NOT EXISTS barak.Barak (userid text PRIMARY KEY, name text, age int, last_update_timestamp timestamp)")
+def get_keyspase(row):
+    words = row.split()
+    for i in range(len(words)):
+        if(words[i] == "EXISTS"):
+            return words[i + 1]
 
-#-------------
+def execute_command(command):
+    res = session.execute(command, trace=True)
+    return res
 
-def execute_command(command, num_t):
-    print("command => ", command, "Num => ", num_t)
-    session.execute(command)
-    return num_t
-
-
-# ----------create querys-------------------  
-path = os.path.dirname(__file__) + "/100queries60%write40%read.txt"
-print(path)
+# ----------create querys-------------------
+path = "../Workloads/100queries60%write40%read.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
+# -----------------------Init Cassandra Connection------------------
+cluster = Cluster([sys.argv[1]], port=9042)
+session = cluster.connect()
+
+session.execute(querys[0])
+
+keyspace = get_keyspase(querys[0])
+
+session = cluster.connect(keyspace)
+
+session.execute(querys[1])
 #-----------------------create threads------------------
 
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = [executor.submit(execute_command, querys[i], i) for i in range(len(querys))]
+traces = []
+with ThreadPoolExecutor(max_workers=10) as executor:
+    print("start execute_command")
+    results = [executor.submit(execute_command, querys[i]) for i in range(2, len(querys))]
+    wait(results)
+    print('All tasks are done!')
 
-    for f in concurrent.futures.as_completed(results):
-        print(f.result())
+count = 0
+with open("query_trace.json", 'w') as file:
+    for res in results:
+        data = {
+            "started_at": res.result().get_query_trace().started_at.isoformat(),
+            "duration": str(res.result().get_query_trace().duration),
+            "query": res.result().get_query_trace().parameters['query']
+        }
+        traces.append(data)
+        count = count + 1
+    json.dump(traces, file)
+    print(count)
+
+# with open("query_trace.json", 'r') as file:
+#     traces = json.load(file)
+#     for trace in traces:
+#         print(trace['started_at'])
+#         print(trace['duration'])
+#         print(trace['query'])
+
+cluster.shutdown()
