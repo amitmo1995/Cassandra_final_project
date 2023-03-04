@@ -6,6 +6,7 @@ class insert_query(object):
         self.table_name = table.name
         self.keyspace_name = table.key_space_name
         self.table_columns = table.columns
+        self.primary_key=table.primary_keys
         self.cols_to_insert_to=[]
         self.inserted_values=[]
         self.query=self.generate_instert_query()
@@ -23,6 +24,13 @@ class insert_query(object):
         query+=" ("
         rand=random.randint(1,len(self.table_columns))
         for i in range(rand) :
+            if i==0:
+                col = self.primary_key[0]
+                while col in self.cols_to_insert_to:
+                    col = self.table_columns[random.randint(0, len(self.table_columns) - 1)]
+                self.cols_to_insert_to.append(col)
+                query += self.cols_to_insert_to[len(self.cols_to_insert_to) - 1]
+                continue
             if i>0 :
                 query+= ", "
             col=self.table_columns[random.randint(0,len(self.table_columns)-1)]
