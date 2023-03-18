@@ -23,7 +23,7 @@ def execute_command(command):
     return res
 
 # ----------create querys-------------------
-path = "../Workloads/10queries_rep3_insert3_update5_delete2_numOfThreads10_withTS.txt"
+path = "../Workloads/100queries_rep3_insert40_update40_delete20_numOfThreads10_withTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -53,7 +53,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     wait(results)
     print('All tasks are done!')
 
-with open("traces_res/10queries_rep3_insert3_update5_delete2_numOfThreads10_withTS.json", 'w') as file:
+with open("traces_res/100queries_rep3_insert40_update40_delete20_numOfThreads10_withTS.json", 'w') as file:
     for result in results:
         trace = result.result().get_query_trace()
         data = {
