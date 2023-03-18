@@ -9,7 +9,7 @@ class update_query(object):
         self.updated_columns=[]
         self.vals_inserted=[]
         self.query=self.generate_update_query()
-    # UPDATE cycling.cyclist_id SET age = 28 WHERE lastname = 'WELTEN' and firstname = 'Bram' IF EXISTS;
+    # UPDATE cycling.cyclist_id SET age = 28 WHERE lastname = 'WELTEN' and firstname = 'Bram' ;
     def generate_update_query(self):
         query="UPDATE "
         query+=self.keyspace_updated

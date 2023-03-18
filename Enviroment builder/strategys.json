@@ -1,0 +1,12 @@
+[
+    {
+        "REPLICATION": {
+             "class": "SimpleStrategy",
+              "replication_factor" : "1" 
+        },
+        "consistencyLevel": "ONE"
+    },
+    {
+
+    }
+]

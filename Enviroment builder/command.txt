@@ -30,10 +30,12 @@ INSERT INTO barakey.Barak (userid , name , age , last_update_timestamp) VALUES (
 
 SELECT * FROM system_schema.keyspaces;
 SELECT * FROM barakey.Barak;
-DROP KEYSPACE barakey;
 
+DROP TABLE amit.barak;
+DROP KEYSPACE amit;
 
-
+get table:
+SELECT * FROM system_schema.tables WHERE keyspace_name = 'amit';
 
 
 nodetool status

@@ -1,10 +1,14 @@
 from cassandra.cluster import Cluster
+from cassandra.query import dict_factory, QueryTrace, SimpleStatement
+from cassandra import ConsistencyLevel
+from cassandra.auth import PlainTextAuthProvider
 from  concurrent.futures import ThreadPoolExecutor,  wait
 from datetime import date, datetime, timedelta
 from decimal import *
 import sys
 import json
 
+traces = []
 
 def get_keyspase(row):
     words = row.split()
@@ -13,16 +17,23 @@ def get_keyspase(row):
             return words[i + 1]
 
 def execute_command(command):
-    res = session.execute(command, trace=True)
+
+    query = SimpleStatement(command, consistency_level=ConsistencyLevel.ONE)
+    # id = uuid.uuid4()
+    # trace = QueryTrace(id, query)
+    res = session.execute(query, trace=True)
+    traces.append(res.get_query_trace())
     return res
 
 # ----------create querys-------------------
-path = "../Workloads/100queries60%write40%read.txt"
+path = "../Workloads/10queries_rep3_insert5_update2_delete3_withoutTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
 # -----------------------Init Cassandra Connection------------------
-cluster = Cluster([sys.argv[1]], port=9042)
+cluster = Cluster([sys.argv[1]], port=9042, protocol_version=3)
+# cluster = Cluster(['62.90.89.27'], port=9042, protocol_version=3)
+
 session = cluster.connect()
 
 session.execute(querys[0])
@@ -34,25 +45,35 @@ session = cluster.connect(keyspace)
 session.execute(querys[1])
 #-----------------------create threads------------------
 
-traces = []
+# statement = SimpleStatement(querys[1], fetch_size=10)
+# r = session.execute_async(statement)
+# print(r.result().get_query_trace())
+
+traces_res = []
 with ThreadPoolExecutor(max_workers=10) as executor:
     print("start execute_command")
     results = [executor.submit(execute_command, querys[i]) for i in range(2, len(querys))]
     wait(results)
     print('All tasks are done!')
 
-count = 0
-with open("query_trace.json", 'w') as file:
-    for res in results:
+with open("traces_res/10queries_rep3_insert5_update2_delete3_withoutTS.json", 'w') as file:
+    for trace in traces:
         data = {
-            "started_at": res.result().get_query_trace().started_at.isoformat(),
-            "duration": str(res.result().get_query_trace().duration),
-            "query": res.result().get_query_trace().parameters['query']
+            "started_at": trace.started_at.isoformat(),
+            "duration": str(trace.duration),
+            "query": trace.parameters['query']
         }
-        traces.append(data)
-        count = count + 1
-    json.dump(traces, file)
-    print(count)
+        traces_res.append(data)
+    json.dump(traces_res, file)
+
+# count = 0
+# res = session.execute('SELECT * FROM system_traces.sessions;')
+# for row in res:
+#     count = count + 1
+#     print(row)
+
+session.execute('DROP TABLE amit.barak;')
+session.execute('DROP KEYSPACE amit;')
 
 # with open("query_trace.json", 'r') as file:
 #     traces = json.load(file)

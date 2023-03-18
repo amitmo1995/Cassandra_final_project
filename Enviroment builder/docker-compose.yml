@@ -5,7 +5,7 @@ services:
     container_name: cas1
     image: cassandra:latest
     volumes:
-      - node1:/var/lib/cassandra/data
+      - node1:/var/lib/cassandra
     ports:
       - 9042:9042
     environment:
@@ -17,7 +17,7 @@ services:
   container_name: cas2
   image: cassandra:latest
   volumes:
-      - node2:/var/lib/cassandra/data
+      - node2:/var/lib/cassandra
   ports:
       - 9043:9042
   depends_on:
@@ -32,7 +32,7 @@ services:
   container_name: cas3
   image: cassandra:latest
   volumes:
-      - node3:/var/lib/cassandra/data
+      - node3:/var/lib/cassandra
   ports:
       - 9044:9042
   depends_on:
@@ -42,7 +42,7 @@ services:
       - CASSANDRA_CLUSTER_NAME=MyCluster
       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
       - CASSANDRA_DC=datacenter1
-      - CASSANDRA_SEEDS=cas1   
+      - CASSANDRA_SEEDS=cas1
 
 volumes:
   node1:
