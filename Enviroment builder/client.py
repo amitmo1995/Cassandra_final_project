@@ -7,6 +7,7 @@ from datetime import date, datetime, timedelta
 from decimal import *
 import sys
 import json
+import time
 
 def get_keyspase(row):
     words = row.split()
@@ -23,7 +24,7 @@ def execute_command(command):
     return res
 
 # ----------create querys-------------------
-path = "../Workloads/100queries_rep3_insert40_update40_delete20_numOfThreads10_withTS.txt"
+path = "../Workloads/100queries_rep3_insert40_update40_delete20_numOfThreads10_withoutTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -40,6 +41,8 @@ keyspace = get_keyspase(querys[0])
 session = cluster.connect(keyspace)
 
 session.execute(querys[1])
+
+time.sleep(10)
 #-----------------------create threads------------------
 
 # statement = SimpleStatement(querys[1], fetch_size=10)
@@ -53,7 +56,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     wait(results)
     print('All tasks are done!')
 
-with open("traces_res/100queries_rep3_insert40_update40_delete20_numOfThreads10_withTS.json", 'w') as file:
+with open("traces_res/100queries_rep3_insert40_update40_delete20_numOfThreads10_withoutTS.json", 'w') as file:
     for result in results:
         trace = result.result().get_query_trace()
         data = {
