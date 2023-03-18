@@ -24,7 +24,7 @@ def execute_command(command):
     return res
 
 # ----------create querys-------------------
-path = "../Workloads/100queries_rep3_insert40_update40_delete20_numOfThreads10_withoutTS.txt"
+path = "../Workloads/100queries_rep3_insert40_update40_delete20_numOfThreads100_withoutTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -50,13 +50,13 @@ time.sleep(10)
 # print(r.result().get_query_trace())
 
 traces_res = []
-with ThreadPoolExecutor(max_workers=10) as executor:
+with ThreadPoolExecutor(max_workers=100) as executor:
     print("start execute_command")
     results = [executor.submit(execute_command, querys[i]) for i in range(2, len(querys))]
     wait(results)
     print('All tasks are done!')
 
-with open("traces_res/100queries_rep3_insert40_update40_delete20_numOfThreads10_withoutTS.json", 'w') as file:
+with open("traces_res/100queries_rep3_insert40_update40_delete20_numOfThreads100_withoutTS.json", 'w') as file:
     for result in results:
         trace = result.result().get_query_trace()
         data = {
