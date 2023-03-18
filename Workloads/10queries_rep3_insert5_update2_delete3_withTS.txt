@@ -5,8 +5,5 @@ INSERT INTO amit.barak (whlz, twkm, npwm) VALUES('kyd', 'edk', 'zdf') USING TIME
 INSERT INTO amit.barak (whlz, twkm, npwm) VALUES('xei', 'ttm', 'lpn') USING TIMESTAMP 3;
 INSERT INTO amit.barak (whlz, twkm, npwm) VALUES('czk', 'erp', 'qlm') USING TIMESTAMP 4;
 INSERT INTO amit.barak (whlz, twkm, npwm) VALUES('sxu', 'nrf', 'pob') USING TIMESTAMP 5;
-UPDATE amit.barak SET twkm = 'dvu' WHERE whlz = 'lep' USING TIMESTAMP 6;
-UPDATE amit.barak SET twkm = 'tmy' WHERE whlz = 'dvu' USING TIMESTAMP 7;
-DELETE FROM amit.barak WHERE whlz='tmy' USING TIMESTAMP 8;
-DELETE FROM amit.barak WHERE whlz='kyd' USING TIMESTAMP 9;
-DELETE FROM amit.barak WHERE whlz='xei' USING TIMESTAMP 10;
+UPDATE amit.barak USING TIMESTAMP 6 SET twkm = 'dvu' WHERE whlz = 'lep';
+UPDATE amit.barak USING TIMESTAMP 7 SET twkm = 'tmy' WHERE whlz = 'dvu';

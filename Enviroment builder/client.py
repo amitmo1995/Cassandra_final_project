@@ -8,8 +8,6 @@ from decimal import *
 import sys
 import json
 
-traces = []
-
 def get_keyspase(row):
     words = row.split()
     for i in range(len(words)):
@@ -22,11 +20,10 @@ def execute_command(command):
     # id = uuid.uuid4()
     # trace = QueryTrace(id, query)
     res = session.execute(query, trace=True)
-    traces.append(res.get_query_trace())
     return res
 
 # ----------create querys-------------------
-path = "../Workloads/10queries_rep3_insert5_update2_delete3_withoutTS.txt"
+path = "../Workloads/10queries_rep3_insert5_update2_delete3_withTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -56,8 +53,9 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     wait(results)
     print('All tasks are done!')
 
-with open("traces_res/10queries_rep3_insert5_update2_delete3_withoutTS.json", 'w') as file:
-    for trace in traces:
+with open("traces_res/10queries_rep3_insert5_update2_delete3_withTS.json", 'w') as file:
+    for result in results:
+        trace = result.result().get_query_trace()
         data = {
             "started_at": trace.started_at.isoformat(),
             "duration": str(trace.duration),
@@ -66,6 +64,8 @@ with open("traces_res/10queries_rep3_insert5_update2_delete3_withoutTS.json", 'w
         traces_res.append(data)
     json.dump(traces_res, file)
 
+
+# get trace with query
 # count = 0
 # res = session.execute('SELECT * FROM system_traces.sessions;')
 # for row in res:
@@ -82,4 +82,5 @@ session.execute('DROP KEYSPACE amit;')
 #         print(trace['duration'])
 #         print(trace['query'])
 
+session.shutdown()
 cluster.shutdown()
