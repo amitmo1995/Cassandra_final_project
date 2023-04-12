@@ -1,0 +1,12 @@
+CREATE KEYSPACE IF NOT EXISTS amit WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '3' };
+CREATE TABLE IF NOT EXISTS amit.barak (ipkw text, froa text, khxq text, PRIMARY KEY (ipkw));
+INSERT INTO amit.barak (ipkw, froa, khxq) VALUES('tum', 'sob', 'nlt');
+INSERT INTO amit.barak (ipkw, froa, khxq) VALUES('kwm', 'fcu', 'zid');
+INSERT INTO amit.barak (ipkw, froa, khxq) VALUES('juv', 'uyl', 'iyq');
+INSERT INTO amit.barak (ipkw, froa, khxq) VALUES('jqe', 'nhr', 'qau');
+INSERT INTO amit.barak (ipkw, froa, khxq) VALUES('qvx', 'amm', 'gmm');
+UPDATE amit.barak SET froa = 'csr' WHERE ipkw = 'tum';
+UPDATE amit.barak SET froa = 'vwe' WHERE ipkw = 'csr';
+DELETE FROM amit.barak WHERE ipkw='vwe';
+DELETE FROM amit.barak WHERE ipkw='kwm';
+DELETE FROM amit.barak WHERE ipkw='juv';
