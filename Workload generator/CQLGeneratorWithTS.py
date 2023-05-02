@@ -54,7 +54,7 @@ def create_insert_query(keyspace_name,table_name,columns) :
     query+=");"
     return query
 
-def create_update_query(keyspace_name,table_name,columns,primary_key) :
+def create_update_query(keyspace_name,table_name,columns,primary_key,num_of_insert) :
     # UPDATE cycling.cyclist_id SET age = 28 WHERE lastname = 'WELTEN' and firstname = 'Bram' IF EXISTS;
     query=f'UPDATE {keyspace_name}.{table_name} SET {columns[1]} = '
     query+="'"
@@ -64,7 +64,10 @@ def create_update_query(keyspace_name,table_name,columns,primary_key) :
     query+=f'{primary_key} = '
     query+="'"
     # added
-    random_number = random.randint(1, 20)
+    temp_percentage=int(num_of_insert*20/100)
+    if temp_percentage==0:
+        temp_percentage=1
+    random_number = random.randint(1, temp_percentage)
     # if not work, delete random number and put zero instead
     query+=primary_key_values[random_number]
     primary_key_values[random_number]=new_key
@@ -95,7 +98,6 @@ while 1:
     num_of_delete=int((int(input("percentage of delete queries: "))/100)*num_of_queries)
     repfactor=int(input("replication factor: "))
     threads = int(input("num of threads: "))
-    TS=int(input("with TS(1) or without TS(0): "))
     if (num_of_delete+num_of_insert+num_of_update)==num_of_queries and repfactor>0:
         break
     else:
@@ -107,46 +109,56 @@ tableQuery,primary_key,columns=create_table_query(table_name,3,keyspace_name)
 
 
 
+dup_in=[]
+dup_up=[]
+dup_del=[]
 
 
-if TS==1:
-    for i in range(num_of_queries):
-        if i<num_of_insert :
-            insert.append(create_insert_query(keyspace_name,table_name,columns)[:-1]+f' USING TIMESTAMP {i+1};')
-        elif i<num_of_insert+num_of_update :
-            temp=create_update_query(keyspace_name,table_name,columns,primary_key)
-            update.append(temp[:17]+f' USING TIMESTAMP {i+1}'+temp[17:])
-        else :
-            temp=create_delete_query(keyspace_name,table_name,primary_key)
-            delete.append(temp[:22]+f' USING TIMESTAMP {i+1}'+temp[22:])
-            primary_key_values = primary_key_values[1:]
-if TS==0:
-    for i in range(num_of_queries):
-        if i < num_of_insert:
-            insert.append(create_insert_query(keyspace_name, table_name, columns))
-        elif i < num_of_insert + num_of_update:
-            update.append(create_update_query(keyspace_name, table_name, columns, primary_key))
-        else:
-            delete.append(create_delete_query(keyspace_name, table_name, primary_key))
-            primary_key_values = primary_key_values[1:]
 
-withTS="withTS"
-if TS==0:
-    withTS="withoutTS"
-file = open(f'workloads/{num_of_queries}queries_rep{repfactor}_insert{num_of_insert}_update{num_of_update}_delete{num_of_delete}_numOfThreads{threads}_{withTS}.txt', "w")
+
+for i in range(num_of_queries):
+    if i<num_of_insert :
+        temp=create_insert_query(keyspace_name,table_name,columns)
+        dup_in.append(temp)
+        insert.append(temp[:-1]+f' USING TIMESTAMP {i+1};')
+    elif i<num_of_insert+num_of_update :
+        temp=create_update_query(keyspace_name,table_name,columns,primary_key,num_of_insert)
+        dup_up.append(temp)
+        update.append(temp[:17]+f' USING TIMESTAMP {i+1}'+temp[17:])
+    else :
+        temp=create_delete_query(keyspace_name,table_name,primary_key)
+        dup_del.append(temp)
+        delete.append(temp[:22]+f' USING TIMESTAMP {i+1}'+temp[22:])
+        primary_key_values = primary_key_values[1:]
+
+
+
+file1 = open(f'workloads/{num_of_queries}queries_rep{repfactor}_insert{num_of_insert}_update{num_of_update}_delete{num_of_delete}_numOfThreads{threads}_withTS.txt', "w")
+file2 = open(f'workloads/{num_of_queries}queries_rep{repfactor}_insert{num_of_insert}_update{num_of_update}_delete{num_of_delete}_numOfThreads{threads}_withoutTS.txt', "w")
 print("[.",end='')
-file.write(keyspaceQuery+'\n')
+file1.write(keyspaceQuery+'\n')
+file2.write(keyspaceQuery+'\n')
 print(".",end='')
-file.write(tableQuery+'\n')
+file1.write(tableQuery+'\n')
+file2.write(tableQuery+'\n')
 print("..",end='')
 for i in insert :
-    file.write(i+'\n')
+    file1.write(i+'\n')
+for i in dup_in:
+    file2.write(i + '\n')
 print("..", end='')
 for i in update :
-    file.write(i+'\n')
+    file1.write(i+'\n')
+for i in dup_up:
+    file2.write(i + '\n')
 print("..", end='')
 for i in delete :
-    file.write(i+'\n')
-print("..]100% done!")
+    file1.write(i+'\n')
+for i in dup_del:
+    file2.write(i + '\n')
+print(f'..]100% done!\nfiles pathes is: \n'
+      f'workloads/{num_of_queries}queries_rep{repfactor}_insert{num_of_insert}_update{num_of_update}_delete{num_of_delete}_numOfThreads{threads}_withTS.txt\n'
+      f'workloads/{num_of_queries}queries_rep{repfactor}_insert{num_of_insert}_update{num_of_update}_delete{num_of_delete}_numOfThreads{threads}_withoutTS.txt')
+
 
 
