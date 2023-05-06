@@ -28,7 +28,7 @@ def execute_command(command):
     return data
 
 # ----------create querys-------------------
-path = "../Workloads/WorkloadsForTable/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS_CLOne.txt"
+path = "../Workload generator/NewTest/100queries_rep3_insert30_update40_delete30_numOfThreads10_withTS.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -61,7 +61,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     print('All tasks are done!')
 
 
-with open("../Workloads/WorkloadsForTableRes/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS_CLOne.json", 'w') as file:
+with open("../Workload generator/NewTestRes/100queries_rep3_insert30_update40_delete30_numOfThreads10_withTS.json", 'w') as file:
     for data in results:
         traces_res.append(data.result())
     json.dump(traces_res, file)
