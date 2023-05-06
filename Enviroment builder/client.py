@@ -7,7 +7,6 @@ from datetime import date, datetime, timedelta
 from decimal import *
 import sys
 import json
-import time
 
 
 def get_keyspase(row):
@@ -18,13 +17,18 @@ def get_keyspase(row):
 
 def execute_command(command):
     query = SimpleStatement(command, consistency_level=ConsistencyLevel.ONE)
-    # id = uuid.uuid4()
-    # trace = QueryTrace(id, query)
-    res = session.execute(query, trace=True)
-    return res
+    res = session.execute_async(query, trace=True)
+    result = res.result()
+    trace = result.get_query_trace()
+    data = {
+        "started_at": trace.started_at.isoformat(),
+        "duration": str(trace.duration),
+        "query": trace.parameters['query']
+    }
+    return data
 
 # ----------create querys-------------------
-path = "../Workloads/Miriam's_quest/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS.txt"
+path = "../Workloads/WorkloadsForTable/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS_CLOne.txt"
 with open(path) as file:
     querys = [line.rstrip() for line in file]
 
@@ -42,7 +46,7 @@ session = cluster.connect(keyspace)
 
 session.execute(querys[1])
 
-time.sleep(10)
+# time.sleep(10)
 #-----------------------create threads------------------
 
 # statement = SimpleStatement(querys[1], fetch_size=10)
@@ -57,15 +61,9 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     print('All tasks are done!')
 
 
-with open("../Workloads/Miriam's_quest_res/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS.json", 'w') as file:
-    for result in results:
-        trace = result.result().get_query_trace()
-        data = {
-            "started_at": trace.started_at.isoformat(),
-            "duration": str(trace.duration),
-            "query": trace.parameters['query']
-        }
-        traces_res.append(data)
+with open("../Workloads/WorkloadsForTableRes/100queries_rep3_insert30_update50_delete20_numOfThreads10_withTS_CLOne.json", 'w') as file:
+    for data in results:
+        traces_res.append(data.result())
     json.dump(traces_res, file)
 
 
