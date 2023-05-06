@@ -1,50 +1,111 @@
-version: '2'
+# version: '2'
 
-services: 
- cas1: 
-    container_name: cas1
+# services: 
+#  cas1: 
+#     container_name: cas1
+#     image: cassandra:latest
+#     volumes:
+#       - node1:/var/lib/cassandra
+#     ports:
+#       - 9042:9042
+#     environment:
+#       - CASSANDRA_START_RPC=true
+#       - CASSANDRA_CLUSTER_NAME=MyCluster
+#       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+#       - CASSANDRA_DC=datacenter1
+#  cas2:
+#   container_name: cas2
+#   image: cassandra:latest
+#   volumes:
+#       - node2:/var/lib/cassandra
+#   ports:
+#       - 9043:9042
+#   depends_on:
+#     - cas1
+#   environment:
+#       - CASSANDRA_START_RPC=true
+#       - CASSANDRA_CLUSTER_NAME=MyCluster
+#       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+#       - CASSANDRA_DC=datacenter1
+#       - CASSANDRA_SEEDS=cas1
+#  cas3:
+#   container_name: cas3
+#   image: cassandra:latest
+#   volumes:
+#       - node3:/var/lib/cassandra
+#   ports:
+#       - 9044:9042
+#   depends_on:
+#     - cas1
+#   environment:
+#       - CASSANDRA_START_RPC=true
+#       - CASSANDRA_CLUSTER_NAME=MyCluster
+#       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+#       - CASSANDRA_DC=datacenter1
+#       - CASSANDRA_SEEDS=cas1
+
+# volumes:
+#   node1:
+#   node2:
+#   node3:
+
+
+
+version: '3'
+services:
+  cassandra1:
     image: cassandra:latest
-    volumes:
-      - node1:/var/lib/cassandra
-    ports:
-      - 9042:9042
+    container_name: cassandra1
     environment:
-      - CASSANDRA_START_RPC=true
-      - CASSANDRA_CLUSTER_NAME=MyCluster
-      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
       - CASSANDRA_DC=datacenter1
- cas2:
-  container_name: cas2
-  image: cassandra:latest
-  volumes:
-      - node2:/var/lib/cassandra
-  ports:
-      - 9043:9042
-  depends_on:
-    - cas1
-  environment:
-      - CASSANDRA_START_RPC=true
-      - CASSANDRA_CLUSTER_NAME=MyCluster
       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_LISTEN_ADDRESS=cassandra1
+      - CASSANDRA_RPC_ADDRESS=cassandra1
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=256M
+    ports:
+      - "9042:9042"
+      - "9160:9160"
+    volumes:
+      - cassandra1:/var/lib/cassandra
+  cassandra2:
+    image: cassandra:latest
+    container_name: cassandra2
+    environment:
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
       - CASSANDRA_DC=datacenter1
-      - CASSANDRA_SEEDS=cas1
- cas3:
-  container_name: cas3
-  image: cassandra:latest
-  volumes:
-      - node3:/var/lib/cassandra
-  ports:
-      - 9044:9042
-  depends_on:
-    - cas1
-  environment:
-      - CASSANDRA_START_RPC=true
-      - CASSANDRA_CLUSTER_NAME=MyCluster
       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_LISTEN_ADDRESS=cassandra2
+      - CASSANDRA_RPC_ADDRESS=cassandra2
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=256M
+    ports:
+      - "9043:9042"
+      - "9161:9160"
+    volumes:
+      - cassandra2:/var/lib/cassandra
+  cassandra3:
+    image: cassandra:latest
+    container_name: cassandra3
+    environment:
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
       - CASSANDRA_DC=datacenter1
-      - CASSANDRA_SEEDS=cas1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_LISTEN_ADDRESS=cassandra3
+      - CASSANDRA_RPC_ADDRESS=cassandra3
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=256M
+    ports:
+      - "9044:9042"
+      - "9162:9160"
+    volumes:
+      - cassandra3:/var/lib/cassandra
 
 volumes:
-  node1:
-  node2:
-  node3:
+  cassandra1:
+  cassandra2:
+  cassandra3:
