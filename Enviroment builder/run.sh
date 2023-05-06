@@ -22,10 +22,10 @@ pip install cassandra-driver --no-binary :all:
 #arg ip num_threads
 python client.py $ip 1
 
-# if [ $1 == 'docker' ]
-# then
-#     docker compose down
-# fi    
+if [ $1 == 'docker' ]
+then
+    docker compose down
+fi    
 
-# docker volume rm $(docker volume ls -q)
+docker volume rm $(docker volume ls -q)
 deactivate
