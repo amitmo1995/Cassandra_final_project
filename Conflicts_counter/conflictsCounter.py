@@ -2,7 +2,7 @@ import json
 
 original=[]
 file_name=input("enter file name: ")
-with open(f'inputs/{file_name}.txt', 'r') as file:
+with open(f'/home/amit/degree/final_proj_cassandra/Cassandra_final_project/Conflicts_counter/input/{file_name}.txt', 'r') as file:
     original = file.readlines()
 print("original")
 for i,j in enumerate(original):
@@ -11,7 +11,6 @@ for i,j in enumerate(original):
     else:
         print(j,end='')
 print("\nnon original")
-
 non_original=[]
 full_duration=0
 insert_duration=0
@@ -20,7 +19,7 @@ delete_duration=0
 in_len=0
 up_len=0
 del_len=0
-with open(f'inputs/{file_name}.json', 'r') as file:
+with open(f'/home/amit/degree/final_proj_cassandra/Cassandra_final_project/Conflicts_counter/input/{file_name}.json', 'r') as file:
     traces = json.load(file)
     for trace in traces:
         # print(trace['started_at'])
@@ -70,7 +69,7 @@ print(f'update query AVG duration: {update_duration/up_len}')
 print(f'delete query AVG duration: {delete_duration/del_len}')
 print(f'insert query AVG duration: {insert_duration/in_len}')
 
-file=open(f'results/{file_name}_results','w')
+file=open(f'results_for_miriam_quest/{file_name}_results','w')
 file.write(f'conflicts: {counter}\n')
 file.write(f'full duration: {full_duration}\n')
 file.write(f'duration per query AVG time: {full_duration/len(original)}\n')
