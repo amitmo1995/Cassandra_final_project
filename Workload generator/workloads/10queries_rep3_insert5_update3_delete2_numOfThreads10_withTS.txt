@@ -1,0 +1,12 @@
+CREATE KEYSPACE IF NOT EXISTS amit WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '3' };
+CREATE TABLE IF NOT EXISTS amit.barak (A text, B text, C text, PRIMARY KEY (A));
+INSERT INTO amit.barak (A, B, C) VALUES('juo', 'xew', 'ynx') USING TIMESTAMP 1;
+INSERT INTO amit.barak (A, B, C) VALUES('utt', 'emu', 'cvw') USING TIMESTAMP 2;
+INSERT INTO amit.barak (A, B, C) VALUES('ukf', 'wet', 'fco') USING TIMESTAMP 3;
+INSERT INTO amit.barak (A, B, C) VALUES('cok', 'xlu', 'vfg') USING TIMESTAMP 4;
+INSERT INTO amit.barak (A, B, C) VALUES('rkp', 'zkt', 'fsk') USING TIMESTAMP 5;
+UPDATE amit.barak USING TIMESTAMP 6 SET B = 'xfu' WHERE A = 'utt';
+UPDATE amit.barak USING TIMESTAMP 7 SET B = 'dod' WHERE A = 'xfu';
+UPDATE amit.barak USING TIMESTAMP 8 SET B = 'nqn' WHERE A = 'dod';
+DELETE FROM amit.barak USING TIMESTAMP 9 WHERE A='juo';
+DELETE FROM amit.barak USING TIMESTAMP 10 WHERE A='nqn';
