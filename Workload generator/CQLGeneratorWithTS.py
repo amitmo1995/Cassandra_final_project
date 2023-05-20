@@ -11,20 +11,30 @@ def create_keyspace_query(name,replication_factor):
      query += "' };"
      return query
 
-def create_table_query(table_name,num_of_cols,keyspace_name):
+def create_table_query(table_name,keyspace_name):
      columns=[]
      query = "CREATE TABLE IF NOT EXISTS "
      query += keyspace_name
      query += "."
      query += table_name
      query += " ("
-     for i in range(num_of_cols):
-         name=strings_generator(4)
-         while name in columns :
-             name=strings_generator(4)
-         columns.append(name.name)
-         query += columns[len(columns)-1]
-         query += " text, "
+
+     columns.append('A')
+     query += columns[len(columns)-1]
+     query += " text, "
+     columns.append('B')
+     query += columns[len(columns) - 1]
+     query += " text, "
+     columns.append('C')
+     query += columns[len(columns) - 1]
+     query += " text, "
+     columns.append('toTS')
+     query += columns[len(columns) - 1]
+     query += " text, "
+     columns.append('currTS')
+     query += columns[len(columns) - 1]
+     query += " text, "
+
      query += "PRIMARY KEY ("
      key=columns[0]
      query += key
@@ -105,7 +115,7 @@ while 1:
 
 
 keyspaceQuery=create_keyspace_query(keyspace_name,repfactor)
-tableQuery,primary_key,columns=create_table_query(table_name,3,keyspace_name)
+tableQuery,primary_key,columns=create_table_query(table_name,keyspace_name)
 
 
 
