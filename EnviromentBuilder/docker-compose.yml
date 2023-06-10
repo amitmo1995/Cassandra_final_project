@@ -1,0 +1,55 @@
+version: '3'
+services:
+  cassandra1:
+    image: cassandra:latest
+    container_name: cassandra1
+    environment:
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_START_RPC=true
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./cassandra1:/var/lib/cassandra
+    networks:
+      - cassandra-networks
+  cassandra2:
+    image: cassandra:latest
+    container_name: cassandra2
+    environment:
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_START_RPC=true
+    ports:
+      - "9043:9042"
+    volumes:
+      - ./cassandra2:/var/lib/cassandra
+    networks:
+      - cassandra-networks
+  cassandra3:
+    image: cassandra:latest
+    container_name: cassandra3
+    environment:
+      - CASSANDRA_SEEDS=cassandra1,cassandra2,cassandra3
+      - CASSANDRA_CLUSTER_NAME=my-cassandra-cluster
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_START_RPC=true
+    ports:
+      - "9044:9042"
+    volumes:
+      - ./cassandra3:/var/lib/cassandra
+    networks:
+      - cassandra-networks
+
+volumes:
+  cassandra1:
+  cassandra2:
+  cassandra3:
+
+networks:
+  cassandra-networks:
