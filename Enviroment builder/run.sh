@@ -1,31 +1,33 @@
 # ./run arg (if docker ot non) (keyspace name) (Strategy) (replication_factor)
 # ./run.sh docker barakk SimpleStrategy 1
 
-if [ $1 == 'docker' ]
-then
-    docker compose up -d
-    ip="localhost"
-else
-    apt update
-    ip=${hostname -I}
-    echo $query | /bin/cqlsh $ip
-fi
+#if run with dockers -- ./run.sh docker <path to generator file> <consistencyLevel> <numOfThread>
 
-# sleep 20
+#if with the cluster -- ./run.sh <path to generator file> <consistencyLevel> <numOfThread> <username> <password>
+
+# if run with azrieli cluster the ips '['62.90.89.27', '62.90.89.28', '62.90.89.29', '62.90.89.39']'
+# if with docker '['localhost']'
+
+#!/bin/bash
 
 virtualenv -p python3 .venv
 . .venv/*/activate
 
 pip install -r requirements.txt
-pip install cassandra-driver --no-binary :all:
 
-#arg ip num_threads
-python client.py $ip 1
-
-# if [ $1 == 'docker' ]
-# then
-#     docker compose down
-# fi    
-
-# docker volume rm $(docker volume ls -q)
+if [ $1 == 'docker' ]
+then
+    docker compose up -d
+    ips=('localhost')
+    sleep 60
+    export IPS="${ips[@]}"
+    python client.py $ips $2 $3 $4
+    docker compose down
+    # docker volume rm $(docker volume ls -q)
+else
+    ips=('62.90.89.27', '62.90.89.28', '62.90.89.29', '62.90.89.39')
+    export IPS="${ips[@]}"
+    python client.py $ips $1 $2 $3 $4 $5
+fi
+ 
 deactivate
