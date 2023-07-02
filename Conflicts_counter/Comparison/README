@@ -2,4 +2,6 @@ Comparison between 2 batches:
 one with TS and one without.
 both contains 30 inserts and 70 updates on one line.
 
+This comparison doesn't contains delete queries and without cassandra trace method but works with SELECT in the end of the batch.
+
 the consistancy levels compared are: ANY,TWO,ONE
