@@ -1,0 +1,294 @@
+Original:
+["UPDATE amit.barak SET C = '30' , toTS = toTS + {'30':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '36' , toTS = toTS + {'36':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '38' , toTS = toTS + {'38':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '39' , toTS = toTS + {'39':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '40' , toTS = toTS + {'40':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '47' , toTS = toTS + {'47':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '48' , toTS = toTS + {'48':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '54' , toTS = toTS + {'54':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '55' , toTS = toTS + {'55':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '70' , toTS = toTS + {'70':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';\n", "DELETE FROM amit.barak WHERE A='tyt';\n", "DELETE FROM amit.barak WHERE A='yjm';\n", "DELETE FROM amit.barak WHERE A='bru';\n", "DELETE FROM amit.barak WHERE A='vsz';\n", "DELETE FROM amit.barak WHERE A='jzn';\n", "DELETE FROM amit.barak WHERE A='sno';\n", "DELETE FROM amit.barak WHERE A='jee';\n", "DELETE FROM amit.barak WHERE A='cur';\n", "DELETE FROM amit.barak WHERE A='mry';\n", "DELETE FROM amit.barak WHERE A='rwj';\n", "DELETE FROM amit.barak WHERE A='xsu';\n", "DELETE FROM amit.barak WHERE A='vhq';\n", "DELETE FROM amit.barak WHERE A='pjw';\n", "DELETE FROM amit.barak WHERE A='yir';\n", "DELETE FROM amit.barak WHERE A='ssq';\n", "DELETE FROM amit.barak WHERE A='ddc';\n", "DELETE FROM amit.barak WHERE A='dqc';\n", "DELETE FROM amit.barak WHERE A='ckv';\n", "DELETE FROM amit.barak WHERE A='kxb';\n", "DELETE FROM amit.barak WHERE A='kqt';\n"]
+Non-original:
+[33, 32, 36, 34, 35, 38, 37, 40, 42, 39, 41, 44, 43, 49, 52, 46, 47, 50, 51, 48, 53, 54, 57, 45, 55, 59, 58, 61, 66, 60, 63, 62, 64, 69, 67, 68, 65, 56, 71, 73, 70, 72, 77, 76, 80, 75, 79, 78, 74, 82, 84, 81, 83, 85, 88, 87, 86, 92, 89, 90, 91, 94, 95, 97, 93, 96, 98, 99, 100, 101]
+line 32)
+UPDATE amit.barak SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '30' , toTS = toTS + {'30':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 33)
+UPDATE amit.barak SET C = '30' , toTS = toTS + {'30':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 34)
+UPDATE amit.barak SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 35)
+UPDATE amit.barak SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 36)
+UPDATE amit.barak SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 37)
+UPDATE amit.barak SET C = '36' , toTS = toTS + {'36':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 38)
+UPDATE amit.barak SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '36' , toTS = toTS + {'36':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 39)
+UPDATE amit.barak SET C = '38' , toTS = toTS + {'38':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 40)
+UPDATE amit.barak SET C = '40' , toTS = toTS + {'40':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '38' , toTS = toTS + {'38':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 41)
+UPDATE amit.barak SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '39' , toTS = toTS + {'39':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 42)
+UPDATE amit.barak SET C = '39' , toTS = toTS + {'39':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '40' , toTS = toTS + {'40':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 43)
+UPDATE amit.barak SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 44)
+UPDATE amit.barak SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 45)
+UPDATE amit.barak SET C = '47' , toTS = toTS + {'47':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 46)
+UPDATE amit.barak SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 47)
+UPDATE amit.barak SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 48)
+UPDATE amit.barak SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 49)
+UPDATE amit.barak SET C = '48' , toTS = toTS + {'48':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '47' , toTS = toTS + {'47':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 50)
+UPDATE amit.barak SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '48' , toTS = toTS + {'48':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 51)
+UPDATE amit.barak SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 52)
+UPDATE amit.barak SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 53)
+UPDATE amit.barak SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 54)
+UPDATE amit.barak SET C = '55' , toTS = toTS + {'55':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 55)
+UPDATE amit.barak SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 56)
+UPDATE amit.barak SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '54' , toTS = toTS + {'54':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 57)
+UPDATE amit.barak SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '55' , toTS = toTS + {'55':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 58)
+UPDATE amit.barak SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 59)
+UPDATE amit.barak SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 60)
+UPDATE amit.barak SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 61)
+UPDATE amit.barak SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 62)
+UPDATE amit.barak SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 63)
+UPDATE amit.barak SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 64)
+UPDATE amit.barak SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 65)
+UPDATE amit.barak SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 66)
+UPDATE amit.barak SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 67)
+UPDATE amit.barak SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 68)
+UPDATE amit.barak SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 69)
+UPDATE amit.barak SET C = '54' , toTS = toTS + {'54':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 70)
+UPDATE amit.barak SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 71)
+UPDATE amit.barak SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 72)
+UPDATE amit.barak SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '70' , toTS = toTS + {'70':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 73)
+UPDATE amit.barak SET C = '70' , toTS = toTS + {'70':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 74)
+UPDATE amit.barak SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 75)
+UPDATE amit.barak SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 76)
+UPDATE amit.barak SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 77)
+UPDATE amit.barak SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 78)
+UPDATE amit.barak SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 79)
+UPDATE amit.barak SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 80)
+UPDATE amit.barak SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';
+UPDATE amit.barak SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 81)
+DELETE FROM amit.barak WHERE A='tyt';
+UPDATE amit.barak SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';
+
+line 82)
+DELETE FROM amit.barak WHERE A='bru';
+DELETE FROM amit.barak WHERE A='tyt';
+
+line 83)
+UPDATE amit.barak SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';
+DELETE FROM amit.barak WHERE A='yjm';
+
+line 84)
+DELETE FROM amit.barak WHERE A='yjm';
+DELETE FROM amit.barak WHERE A='bru';
+
+line 85)
+DELETE FROM amit.barak WHERE A='vsz';
+DELETE FROM amit.barak WHERE A='vsz';
+
+line 86)
+DELETE FROM amit.barak WHERE A='jee';
+DELETE FROM amit.barak WHERE A='jzn';
+
+line 87)
+DELETE FROM amit.barak WHERE A='sno';
+DELETE FROM amit.barak WHERE A='sno';
+
+line 88)
+DELETE FROM amit.barak WHERE A='jzn';
+DELETE FROM amit.barak WHERE A='jee';
+
+line 89)
+DELETE FROM amit.barak WHERE A='xsu';
+DELETE FROM amit.barak WHERE A='cur';
+
+line 90)
+DELETE FROM amit.barak WHERE A='cur';
+DELETE FROM amit.barak WHERE A='mry';
+
+line 91)
+DELETE FROM amit.barak WHERE A='mry';
+DELETE FROM amit.barak WHERE A='rwj';
+
+line 92)
+DELETE FROM amit.barak WHERE A='rwj';
+DELETE FROM amit.barak WHERE A='xsu';
+
+line 93)
+DELETE FROM amit.barak WHERE A='pjw';
+DELETE FROM amit.barak WHERE A='vhq';
+
+line 94)
+DELETE FROM amit.barak WHERE A='yir';
+DELETE FROM amit.barak WHERE A='pjw';
+
+line 95)
+DELETE FROM amit.barak WHERE A='ddc';
+DELETE FROM amit.barak WHERE A='yir';
+
+line 96)
+DELETE FROM amit.barak WHERE A='vhq';
+DELETE FROM amit.barak WHERE A='ssq';
+
+line 97)
+DELETE FROM amit.barak WHERE A='ssq';
+DELETE FROM amit.barak WHERE A='ddc';
+
+line 98)
+DELETE FROM amit.barak WHERE A='dqc';
+DELETE FROM amit.barak WHERE A='dqc';
+
+line 99)
+DELETE FROM amit.barak WHERE A='ckv';
+DELETE FROM amit.barak WHERE A='ckv';
+
+line 100)
+DELETE FROM amit.barak WHERE A='kxb';
+DELETE FROM amit.barak WHERE A='kxb';
+
+line 101)
+DELETE FROM amit.barak WHERE A='kqt';
+DELETE FROM amit.barak WHERE A='kqt';
+
+conflicts with delete included: 24
+conflicts without delete included: 19
+full duration: 0.20964499999999997
+duration per query AVG time: 0.0020553431372549017
+update query AVG duration: 0.0010203400000000002
+delete query AVG duration: 0.00073895
+insert query AVG duration: 0.004794966666666665
+[32, 34, 37, 40, 43, 46, 50, 54, 57, 60, 62, 65, 67, 68, 71, 74, 76, 78, 79]
+[33, 32, 36, 34, 35, 38, 37, 40, 42, 39, 41, 44, 43, 49, 52, 46, 47, 50, 51, 48, 53, 54, 57, 45, 55, 59, 58, 61, 66, 60, 63, 62, 64, 69, 67, 68, 65, 56, 71, 73, 70, 72, 77, 76, 80, 75, 79, 78, 74, 82, 84, 81, 83, 85, 88, 87, 86, 92, 89, 90, 91, 94, 95, 97, 93, 96, 98, 99, 100, 101]
+[33, 32, 36, 34, 35, 38, 37, 40, 42, 39, 41, 44, 43, 49, 52, 46, 47, 50, 51, 48, 53, 54, 57, 45, 55, 59, 58, 61, 66, 60, 63, 62, 64, 69, 67, 68, 65, 56, 71, 73, 70, 72, 77, 76, 80, 75, 79, 78, 74, 81]
