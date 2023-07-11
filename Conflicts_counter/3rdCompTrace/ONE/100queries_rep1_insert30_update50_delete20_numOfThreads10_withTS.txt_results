@@ -1,0 +1,295 @@
+Original:
+["UPDATE amit.barak USING TIMESTAMP 31 SET C = '30' , toTS = toTS + {'30':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 32 SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 33 SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 34 SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 35 SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 36 SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 37 SET C = '36' , toTS = toTS + {'36':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 38 SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 39 SET C = '38' , toTS = toTS + {'38':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 40 SET C = '39' , toTS = toTS + {'39':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 41 SET C = '40' , toTS = toTS + {'40':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 42 SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 43 SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 44 SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 45 SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 46 SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 47 SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 48 SET C = '47' , toTS = toTS + {'47':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 49 SET C = '48' , toTS = toTS + {'48':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 50 SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 51 SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 52 SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 53 SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 54 SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 55 SET C = '54' , toTS = toTS + {'54':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 56 SET C = '55' , toTS = toTS + {'55':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 57 SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 58 SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 59 SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 60 SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 61 SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 62 SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 63 SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 64 SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 65 SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 66 SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 67 SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 68 SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 69 SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 70 SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 71 SET C = '70' , toTS = toTS + {'70':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 72 SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 73 SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 74 SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 75 SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 76 SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 77 SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 78 SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 79 SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 80 SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';\n", "DELETE FROM amit.barak USING TIMESTAMP 81 WHERE A='tyt';\n", "DELETE FROM amit.barak USING TIMESTAMP 82 WHERE A='yjm';\n", "DELETE FROM amit.barak USING TIMESTAMP 83 WHERE A='bru';\n", "DELETE FROM amit.barak USING TIMESTAMP 84 WHERE A='vsz';\n", "DELETE FROM amit.barak USING TIMESTAMP 85 WHERE A='jzn';\n", "DELETE FROM amit.barak USING TIMESTAMP 86 WHERE A='sno';\n", "DELETE FROM amit.barak USING TIMESTAMP 87 WHERE A='jee';\n", "DELETE FROM amit.barak USING TIMESTAMP 88 WHERE A='cur';\n", "DELETE FROM amit.barak USING TIMESTAMP 89 WHERE A='mry';\n", "DELETE FROM amit.barak USING TIMESTAMP 90 WHERE A='rwj';\n", "DELETE FROM amit.barak USING TIMESTAMP 91 WHERE A='xsu';\n", "DELETE FROM amit.barak USING TIMESTAMP 92 WHERE A='vhq';\n", "DELETE FROM amit.barak USING TIMESTAMP 93 WHERE A='pjw';\n", "DELETE FROM amit.barak USING TIMESTAMP 94 WHERE A='yir';\n", "DELETE FROM amit.barak USING TIMESTAMP 95 WHERE A='ssq';\n", "DELETE FROM amit.barak USING TIMESTAMP 96 WHERE A='ddc';\n", "DELETE FROM amit.barak USING TIMESTAMP 97 WHERE A='dqc';\n", "DELETE FROM amit.barak USING TIMESTAMP 98 WHERE A='ckv';\n", "DELETE FROM amit.barak USING TIMESTAMP 99 WHERE A='kxb';\n", "DELETE FROM amit.barak USING TIMESTAMP 100 WHERE A='kqt';\n"]
+Non-original:
+["UPDATE amit.barak USING TIMESTAMP 31 SET C = '30' , toTS = toTS + {'30':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 33 SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 32 SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 38 SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 34 SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 35 SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 37 SET C = '36' , toTS = toTS + {'36':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 36 SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 39 SET C = '38' , toTS = toTS + {'38':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 40 SET C = '39' , toTS = toTS + {'39':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 41 SET C = '40' , toTS = toTS + {'40':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 43 SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 44 SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 46 SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 42 SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 45 SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 50 SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 48 SET C = '47' , toTS = toTS + {'47':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 49 SET C = '48' , toTS = toTS + {'48':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 51 SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 52 SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 47 SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 54 SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 53 SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 55 SET C = '54' , toTS = toTS + {'54':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 56 SET C = '55' , toTS = toTS + {'55':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 58 SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 59 SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 62 SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 57 SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 60 SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 61 SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 65 SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 63 SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 64 SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 69 SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 66 SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 70 SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 67 SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 68 SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 71 SET C = '70' , toTS = toTS + {'70':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 74 SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 75 SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 76 SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 79 SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 77 SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 72 SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 80 SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';\n", "UPDATE amit.barak USING TIMESTAMP 73 SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';\n", "DELETE FROM amit.barak USING TIMESTAMP 81 WHERE A='tyt';\n", "DELETE FROM amit.barak USING TIMESTAMP 83 WHERE A='bru';\n", "DELETE FROM amit.barak USING TIMESTAMP 86 WHERE A='sno';\n", "DELETE FROM amit.barak USING TIMESTAMP 85 WHERE A='jzn';\n", "DELETE FROM amit.barak USING TIMESTAMP 87 WHERE A='jee';\n", "DELETE FROM amit.barak USING TIMESTAMP 88 WHERE A='cur';\n", "DELETE FROM amit.barak USING TIMESTAMP 82 WHERE A='yjm';\n", "DELETE FROM amit.barak USING TIMESTAMP 84 WHERE A='vsz';\n", "DELETE FROM amit.barak USING TIMESTAMP 90 WHERE A='rwj';\n", "DELETE FROM amit.barak USING TIMESTAMP 89 WHERE A='mry';\n", "UPDATE amit.barak USING TIMESTAMP 78 SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';\n", "DELETE FROM amit.barak USING TIMESTAMP 93 WHERE A='pjw';\n", "DELETE FROM amit.barak USING TIMESTAMP 92 WHERE A='vhq';\n", "DELETE FROM amit.barak USING TIMESTAMP 97 WHERE A='dqc';\n", "DELETE FROM amit.barak USING TIMESTAMP 91 WHERE A='xsu';\n", "DELETE FROM amit.barak USING TIMESTAMP 94 WHERE A='yir';\n", "DELETE FROM amit.barak USING TIMESTAMP 99 WHERE A='kxb';\n", "DELETE FROM amit.barak USING TIMESTAMP 98 WHERE A='ckv';\n", "DELETE FROM amit.barak USING TIMESTAMP 96 WHERE A='ddc';\n", "DELETE FROM amit.barak USING TIMESTAMP 95 WHERE A='ssq';\n", "DELETE FROM amit.barak USING TIMESTAMP 100 WHERE A='kqt';\n"]
+line: 1 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 32 SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 33 SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 2 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 33 SET C = '32' , toTS = toTS + {'32':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 32 SET C = '31' , toTS = toTS + {'31':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 3 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 34 SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 38 SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 4 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 35 SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 34 SET C = '33' , toTS = toTS + {'33':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 5 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 36 SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 35 SET C = '34' , toTS = toTS + {'34':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 7 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 38 SET C = '37' , toTS = toTS + {'37':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 36 SET C = '35' , toTS = toTS + {'35':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 11 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 42 SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 43 SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 12 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 43 SET C = '42' , toTS = toTS + {'42':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 44 SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 13 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 44 SET C = '43' , toTS = toTS + {'43':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 46 SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 14 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 45 SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 42 SET C = '41' , toTS = toTS + {'41':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 15 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 46 SET C = '45' , toTS = toTS + {'45':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 45 SET C = '44' , toTS = toTS + {'44':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 16 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 47 SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 50 SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 19 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 50 SET C = '49' , toTS = toTS + {'49':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 51 SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 20 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 51 SET C = '50' , toTS = toTS + {'50':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 52 SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 21 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 52 SET C = '51' , toTS = toTS + {'51':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 47 SET C = '46' , toTS = toTS + {'46':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 22 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 53 SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 54 SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 23 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 54 SET C = '53' , toTS = toTS + {'53':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 53 SET C = '52' , toTS = toTS + {'52':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 26 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 57 SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 58 SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 27 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 58 SET C = '57' , toTS = toTS + {'57':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 59 SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 28 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 59 SET C = '58' , toTS = toTS + {'58':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 62 SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 29 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 60 SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 57 SET C = '56' , toTS = toTS + {'56':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 30 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 61 SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 60 SET C = '59' , toTS = toTS + {'59':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 31 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 62 SET C = '61' , toTS = toTS + {'61':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 61 SET C = '60' , toTS = toTS + {'60':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 32 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 63 SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 65 SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 33 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 64 SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 63 SET C = '62' , toTS = toTS + {'62':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 34 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 65 SET C = '64' , toTS = toTS + {'64':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 64 SET C = '63' , toTS = toTS + {'63':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 35 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 66 SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 69 SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 36 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 67 SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 66 SET C = '65' , toTS = toTS + {'65':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 37 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 68 SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 70 SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 38 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 69 SET C = '68' , toTS = toTS + {'68':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 67 SET C = '66' , toTS = toTS + {'66':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 39 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 70 SET C = '69' , toTS = toTS + {'69':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 68 SET C = '67' , toTS = toTS + {'67':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 41 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 72 SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 74 SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 42 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 73 SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 75 SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 43 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 74 SET C = '73' , toTS = toTS + {'73':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 76 SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 44 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 75 SET C = '74' , toTS = toTS + {'74':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 79 SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 45 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 76 SET C = '75' , toTS = toTS + {'75':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 77 SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 46 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 77 SET C = '76' , toTS = toTS + {'76':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 72 SET C = '71' , toTS = toTS + {'71':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 47 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 78 SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 80 SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 48 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 79 SET C = '78' , toTS = toTS + {'78':toTimestamp(now())}  WHERE A = 'yjm';
+
+UPDATE amit.barak USING TIMESTAMP 73 SET C = '72' , toTS = toTS + {'72':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 49 had the following conflict
+UPDATE amit.barak USING TIMESTAMP 80 SET C = '79' , toTS = toTS + {'79':toTimestamp(now())}  WHERE A = 'yjm';
+
+DELETE FROM amit.barak USING TIMESTAMP 81 WHERE A='tyt';
+
+line: 50 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 81 WHERE A='tyt';
+
+DELETE FROM amit.barak USING TIMESTAMP 83 WHERE A='bru';
+
+line: 51 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 82 WHERE A='yjm';
+
+DELETE FROM amit.barak USING TIMESTAMP 86 WHERE A='sno';
+
+line: 52 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 83 WHERE A='bru';
+
+DELETE FROM amit.barak USING TIMESTAMP 85 WHERE A='jzn';
+
+line: 53 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 84 WHERE A='vsz';
+
+DELETE FROM amit.barak USING TIMESTAMP 87 WHERE A='jee';
+
+line: 54 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 85 WHERE A='jzn';
+
+DELETE FROM amit.barak USING TIMESTAMP 88 WHERE A='cur';
+
+line: 55 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 86 WHERE A='sno';
+
+DELETE FROM amit.barak USING TIMESTAMP 82 WHERE A='yjm';
+
+line: 56 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 87 WHERE A='jee';
+
+DELETE FROM amit.barak USING TIMESTAMP 84 WHERE A='vsz';
+
+line: 57 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 88 WHERE A='cur';
+
+DELETE FROM amit.barak USING TIMESTAMP 90 WHERE A='rwj';
+
+line: 59 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 90 WHERE A='rwj';
+
+UPDATE amit.barak USING TIMESTAMP 78 SET C = '77' , toTS = toTS + {'77':toTimestamp(now())}  WHERE A = 'yjm';
+
+line: 60 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 91 WHERE A='xsu';
+
+DELETE FROM amit.barak USING TIMESTAMP 93 WHERE A='pjw';
+
+line: 62 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 93 WHERE A='pjw';
+
+DELETE FROM amit.barak USING TIMESTAMP 97 WHERE A='dqc';
+
+line: 63 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 94 WHERE A='yir';
+
+DELETE FROM amit.barak USING TIMESTAMP 91 WHERE A='xsu';
+
+line: 64 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 95 WHERE A='ssq';
+
+DELETE FROM amit.barak USING TIMESTAMP 94 WHERE A='yir';
+
+line: 65 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 96 WHERE A='ddc';
+
+DELETE FROM amit.barak USING TIMESTAMP 99 WHERE A='kxb';
+
+line: 66 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 97 WHERE A='dqc';
+
+DELETE FROM amit.barak USING TIMESTAMP 98 WHERE A='ckv';
+
+line: 67 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 98 WHERE A='ckv';
+
+DELETE FROM amit.barak USING TIMESTAMP 96 WHERE A='ddc';
+
+line: 68 had the following conflict
+DELETE FROM amit.barak USING TIMESTAMP 99 WHERE A='kxb';
+
+DELETE FROM amit.barak USING TIMESTAMP 95 WHERE A='ssq';
+
+conflicts: 25
+full duration: 0.10465600000000003
+duration per query AVG time: 0.0010260392156862747
+update query AVG duration: 0.0010035
+delete query AVG duration: 0.0007756
+insert query AVG duration: 0.0012989666666666665
