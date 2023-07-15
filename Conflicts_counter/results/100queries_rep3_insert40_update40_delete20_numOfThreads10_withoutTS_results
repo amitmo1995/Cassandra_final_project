@@ -1,6 +1,0 @@
-conflicts: 0
-full duration: 1.1263480000000006
-duration per query AVG time: 0.011042627450980398
-update query AVG duration: 0.005370575000000001
-delete query AVG duration: 0.004896100000000001
-insert query AVG duration: 0.020340075
