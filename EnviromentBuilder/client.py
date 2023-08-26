@@ -27,17 +27,26 @@ def execute_command(command, session):
         print("-----------------------------------------------------------")
         trace = res.result().get_query_trace(max_wait_sec=1)
         data = {
+            "trace_id": trace.trace_id,
+            "request_type": trace.request_type,
+            "client": trace.client,
+            "coordinator":trace.coordinator,
             "started_at": trace.started_at.isoformat(),
+            "parameters": trace.parameters,
             "duration": str(trace.duration),
-            "query": trace.parameters['query']
+            "query": trace.parameters['query'],
+            "events": []
         }
-        print(data)
         for event in trace.events:
-            print("#################")
-            print(event)
-            # data['events'].append(event.description)
-            # print("Node: {}".format(event.source))
-            # print("Source elapsed time: {} microseconds".format(event.source_elapsed))
+            events = {
+                "description": event.description,
+                "source": event.source,
+                "source_elapsed": event.source_elapsed,
+                "thread_name": event.thread_name,
+                "datetime": event.datetime.isoformat(),
+            }
+            data["events"].append(events)
+        print(data)
         traces_res.append(data)
     except Exception as e:
         print("Error retrieving query trace:", e)
@@ -71,6 +80,7 @@ def create_session(querys):
 
     session = cluster.connect(keyspace)
     session_id = session.session_id
+    print("session_id: ", session_id)
     session.execute(querys[1])
     return (cluster, session)
 
@@ -86,6 +96,11 @@ def save_table(path=None, session=None):
             print(row)
             file.write(str(row) + '\n')
 
+
+def save_trace(path=None):
+    res_path = path.split('.')[0] + "_res.json"
+    with open(res_path, 'w') as file:
+        json.dump(traces_res, file, ensure_ascii=False,sort_keys=True, default=str, indent=4)
 
 if __name__ == "__main__":
     path = sys.argv[2]
@@ -105,6 +120,7 @@ if __name__ == "__main__":
 
 
     save_table(path=path, session=session)
+    save_trace(path=path)
 
     session.execute('DROP TABLE amit.barak;')
     session.execute('DROP KEYSPACE amit;')
